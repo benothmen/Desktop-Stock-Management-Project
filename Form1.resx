@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BunifuTextBoxUserName.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQkAAAAjCAYAAACHKP+AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM0SURBVHhe7d0/SFtRFMfxN3bs2LFjx46OHZ1Kl0I3u5k/
+        aozRJGrACBkCxSVCkQ5Cwa2DoAQqgoNLyKQgUsggFCkNbUpMi7FNhtf7i0dqqrUpOtS87wfu8HzJczon
+        551773seANyoUCg0EI1Gs6lUqpRMJncSicRnd+wzGIz/byg+Faca7jgbiUQGLZRvViwWuzs1NfUqHo83
+        crlcvVgs+vv7+36lUvFrtZoP4P+k+FScaihuFxYW6qOjo20Xz2+Gh4fvW4hfz+TkZN5dsL65udluNBr2
+        rwHcVq1Wyy+VSv709HRdP/5DQ0N3LNz/jaqHdDpdXltbO2k2m3Z5AP1CyUI//i7OK+425J6Ffm9UhszO
+        zr7b29v7YdcD0KcODw/9mZmZjy5RPLQUcDVVEEoQ+iKAYFArIZPJfOqpT6FbDCoIIHiq1aoqigMVCpYO
+        Lkomk4VisXhi3wEQMOVyueUKhbeWErqpceGSREPNDADBNTc3d3Rpf0JTIep02ucABNTu7q6fSqW2LDWc
+        0jxpPB7/ylQnAEkkEsdd06LuYFArsew8gIBbWVk5DofDIUsRnueqiJdbW1t2GkDQXbjl0GYt7cUAANF0
+        qLvl+GApotO0PGDxFIAz6k+OjY01LUV4ng5oWgI4T1vNLUV4ng4A4LyuJKH95SyiAnBeV5JQg0KNCgAQ
+        FQ0qHixFdPZs7OjJNQAgeqKVHn1nKaIzu/F6e3vbTgMIOi2J0NIISxGdFZfPl5eXv9l5AAG3vr7eHh8f
+        z1mKOH3QjPvDdzsPIOAu3QmqJZhaigkg2LSwUgssLTX8oqyh7GGfAxBQi4uLR+Fw+Imlhm5UE0Cw/bGK
+        OKP945lM5j0v3AGCR1szstlsdWRk5IGlhMvptmN+fr7GCkwgWAqFwpeJiYmnlgqu5sqNx0oUvLEL6H+q
+        IJQg0ul0xFJAb1RR6IUdrMQE+pd6ELrF6LmC+J16FFqync/n6zxvAugf6jsuLS011KT8aw+iF9Fo9JEu
+        5iqLxurqalvVBT0L4HZR3G5sbPi5XK6ufRkurp9ZiN8cZRxXXaRVXWiHmLaSMhiM2zEUt7FY7EUoFBqw
+        kAaA6/K8n6hROnwFSavCAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BunifuTextBoxUserName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 137</value>
+  </data>
+  <data name="BunifuTextBoxUserName.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="BunifuTextBoxUserName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 35</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BunifuTextBoxUserName.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BunifuTextBoxUserName.Name" xml:space="preserve">
+    <value>BunifuTextBoxUserName</value>
+  </data>
+  <data name="&gt;&gt;BunifuTextBoxUserName.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox, Bunifu.UI.WinForms.BunifuTextbox, Version=1.9.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;BunifuTextBoxUserName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BunifuTextBoxUserName.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="BunifuTextBoxPassword.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQkAAAAjCAYAAACHKP+AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM0SURBVHhe7d0/SFtRFMfxN3bs2LFjx46OHZ1Kl0I3u5k/
+        aozRJGrACBkCxSVCkQ5Cwa2DoAQqgoNLyKQgUsggFCkNbUpMi7FNhtf7i0dqqrUpOtS87wfu8HzJczon
+        551773seANyoUCg0EI1Gs6lUqpRMJncSicRnd+wzGIz/byg+Faca7jgbiUQGLZRvViwWuzs1NfUqHo83
+        crlcvVgs+vv7+36lUvFrtZoP4P+k+FScaihuFxYW6qOjo20Xz2+Gh4fvW4hfz+TkZN5dsL65udluNBr2
+        rwHcVq1Wyy+VSv709HRdP/5DQ0N3LNz/jaqHdDpdXltbO2k2m3Z5AP1CyUI//i7OK+425J6Ffm9UhszO
+        zr7b29v7YdcD0KcODw/9mZmZjy5RPLQUcDVVEEoQ+iKAYFArIZPJfOqpT6FbDCoIIHiq1aoqigMVCpYO
+        Lkomk4VisXhi3wEQMOVyueUKhbeWErqpceGSREPNDADBNTc3d3Rpf0JTIep02ucABNTu7q6fSqW2LDWc
+        0jxpPB7/ylQnAEkkEsdd06LuYFArsew8gIBbWVk5DofDIUsRnueqiJdbW1t2GkDQXbjl0GYt7cUAANF0
+        qLvl+GApotO0PGDxFIAz6k+OjY01LUV4ng5oWgI4T1vNLUV4ng4A4LyuJKH95SyiAnBeV5JQg0KNCgAQ
+        FQ0qHixFdPZs7OjJNQAgeqKVHn1nKaIzu/F6e3vbTgMIOi2J0NIISxGdFZfPl5eXv9l5AAG3vr7eHh8f
+        z1mKOH3QjPvDdzsPIOAu3QmqJZhaigkg2LSwUgssLTX8oqyh7GGfAxBQi4uLR+Fw+Imlhm5UE0Cw/bGK
+        OKP945lM5j0v3AGCR1szstlsdWRk5IGlhMvptmN+fr7GCkwgWAqFwpeJiYmnlgqu5sqNx0oUvLEL6H+q
+        IJQg0ul0xFJAb1RR6IUdrMQE+pd6ELrF6LmC+J16FFqync/n6zxvAugf6jsuLS011KT8aw+iF9Fo9JEu
+        5iqLxurqalvVBT0L4HZR3G5sbPi5XK6ufRkurp9ZiN8cZRxXXaRVXWiHmLaSMhiM2zEUt7FY7EUoFBqw
+        kAaA6/K8n6hROnwFSavCAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BunifuTextBoxPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 207</value>
+  </data>
+  <data name="BunifuTextBoxPassword.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 35</value>
+  </data>
+  <data name="BunifuTextBoxPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 35</value>
+  </data>
+  <data name="BunifuTextBoxPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BunifuTextBoxPassword.Name" xml:space="preserve">
+    <value>BunifuTextBoxPassword</value>
+  </data>
+  <data name="&gt;&gt;BunifuTextBoxPassword.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox, Bunifu.UI.WinForms.BunifuTextbox, Version=1.9.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;BunifuTextBoxPassword.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BunifuTextBoxPassword.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAANIAAAAxCAYAAACvSfduAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJcSURBVHhe7d0hcxNBGIfxk0gMzaUGJBJZiUQikUg+Au56
+        F1GJRCKRyMqYZvdQyMp8hMrKdHfvXzLJvbkc2Q6dNs8783ObpuKe2b0UcgXDMI8wJ1V7Nq39eXA5bdx8
+        2vgV8LS5ZXctB+HaLmfugy73h53X1fxl2fhv6U1n278E8EzV7sek8m+UQd6k3cd6E+BIxE0kbCYvlMS/
+        TdyFuuOb/cOB4+L8q+p3qTzGTdzOOMIBfafV1TtlMjxpJyIiYKdR900c54B9nI8bjpLpT9m0F2GR8UIA
+        a25V1u1PZbM58UbKfhEAi3m/9PfvRABGKWv/S/l0Ez8jtxYCGLbxkXj8JxHWIgDDytp9UUYc64BDbRzv
+        +MgbOEzYhK6VUdqR/liLAAwL7dwoo7AjGQsAjKOMCAnIoYwICcihjAgJyKGMCAnIoYwICcihjAgJyKGM
+        CAnIoYwICcihjAgJyKGMCAnIoYwICcihjAgJyKGMCAnIoYwICcihjAgJyKGMCAnIoYzS/5C9thYAGBba
+        uVVGcUfigWHAYdxSGaWj3ff+AgB71f5SGRXFpPGfzUUAhtX+XBnpUS7WIgCDet//Hb/ozloIwBa/xk75
+        rCeWZS0GsMvio/LZHHYlYBxzN7qf7hlJzlsvBHAvNFIt3iobe9IRj2fIAgN2HOm2Jz3mhZiAnvinImUy
+        buLOFM+B1g8Djk+85Rm5E22P7pnm7E44Xm36YGHvPdGYmcz8+/Xu1G69EfDcuFW3ebjlabP4pAwebmKV
+        03rxNe5SIaxb+5cAnrJ4bbcXJ1V7psueYZj/M0VxByXcF6NG5ooMAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BunifuButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="BunifuButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 257</value>
+  </data>
+  <data name="BunifuButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 49</value>
+  </data>
+  <data name="BunifuButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;BunifuButton1.Name" xml:space="preserve">
+    <value>BunifuButton1</value>
+  </data>
+  <data name="&gt;&gt;BunifuButton1.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuButton.BunifuButton, Bunifu.UI.WinForms.BunifuButton, Version=1.9.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;BunifuButton1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BunifuButton1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="BunifuLabel1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Bright, 10pt</value>
+  </data>
+  <data name="BunifuLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 109</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BunifuLabel1.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="BunifuLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 17</value>
+  </data>
+  <data name="BunifuLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="BunifuLabel1.Text" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel1.Name" xml:space="preserve">
+    <value>BunifuLabel1</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel1.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms.BunifuLabel, Version=1.9.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BunifuLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Lucida Bright, 10pt</value>
+  </data>
+  <data name="BunifuLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 181</value>
+  </data>
+  <data name="BunifuLabel2.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="BunifuLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 17</value>
+  </data>
+  <data name="BunifuLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="BunifuLabel2.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel2.Name" xml:space="preserve">
+    <value>BunifuLabel2</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel2.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms.BunifuLabel, Version=1.9.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BunifuLabel3.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 1.2px; font-family: 'Sitka Small'; font-size: 8,25pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: #1982C7; text-align: left; }</value>
+  </data>
+  <data name="BunifuLabel3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Sitka Small, 8.25pt</value>
+  </data>
+  <data name="BunifuLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 33</value>
+  </data>
+  <data name="BunifuLabel3.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="BunifuLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 51</value>
+  </data>
+  <data name="BunifuLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="BunifuLabel3.Text" xml:space="preserve">
+    <value>Market</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel3.Name" xml:space="preserve">
+    <value>BunifuLabel3</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel3.Type" xml:space="preserve">
+    <value>Bunifu.UI.WinForms.BunifuLabel, Bunifu.UI.WinForms.BunifuLabel, Version=1.9.0.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BunifuLabel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>422, 363</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Form1</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

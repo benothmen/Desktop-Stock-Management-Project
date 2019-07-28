@@ -1,0 +1,394 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ProjetGestionDeStock
+</name>
+</assembly>
+<members>
+<member name="T:ProjetGestionDeStock.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:ProjetGestionDeStock.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:ProjetGestionDeStock.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:ProjetGestionDeStock.BD_STOCKEntities1DataModel.BD_STOCKEntities1UnitOfWork">
+ <summary>
+ A BD_STOCKEntities1UnitOfWork instance that represents the run-time implementation of the IBD_STOCKEntities1UnitOfWork interface.
+ </summary>
+</member>
+<member name="T:ProjetGestionDeStock.BD_STOCKEntities1DataModel.IBD_STOCKEntities1UnitOfWork">
+ <summary>
+ IBD_STOCKEntities1UnitOfWork extends the IUnitOfWork interface with repositories representing specific entities.
+ </summary>
+</member>
+<member name="P:ProjetGestionDeStock.BD_STOCKEntities1DataModel.IBD_STOCKEntities1UnitOfWork.Categoire">
+ <summary>
+ The Categoire entities repository.
+ </summary>
+</member>
+<member name="P:ProjetGestionDeStock.BD_STOCKEntities1DataModel.IBD_STOCKEntities1UnitOfWork.Product">
+ <summary>
+ The Product entities repository.
+ </summary>
+</member>
+<member name="T:ProjetGestionDeStock.BD_STOCKEntities1DataModel.UnitOfWorkSource">
+ <summary>
+ Provides methods to obtain the relevant IUnitOfWorkFactory.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.BD_STOCKEntities1DataModel.UnitOfWorkSource.GetUnitOfWorkFactory">
+ <summary>
+ Returns the IUnitOfWorkFactory implementation.
+ </summary>
+</member>
+<member name="T:ProjetGestionDeStock.Common.CollectionViewModel`3">
+ <summary>
+ The base class for a POCO view models exposing a collection of entities of a given type and CRUD operations against these entities.
+ This is a partial class that provides extension point to add custom properties, commands and override methods without modifying the auto-generated code.
+ </summary>
+ <typeparam name="TEntity">An entity type.</typeparam>
+ <typeparam name="TPrimaryKey">A primary key value type.</typeparam>
+ <typeparam name="TUnitOfWork">A unit of work type.</typeparam>
+</member>
+<member name="M:ProjetGestionDeStock.Common.CollectionViewModel`3.CreateCollectionViewModel(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{`2},System.Func{`2,DevExpress.Mvvm.DataModel.IRepository{`0,`1}},System.Func{DevExpress.Mvvm.DataModel.IRepositoryQuery{`0},System.Linq.IQueryable{`0}},System.Action{`0},System.Func{System.Boolean},System.Boolean,DevExpress.Mvvm.ViewModel.UnitOfWorkPolicy)">
+ <summary>
+ Creates a new instance of CollectionViewModel as a POCO view model.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+ <param name="getRepositoryFunc">A function that returns a repository representing entities of the given type.</param>
+ <param name="projection">An optional parameter that provides a LINQ function used to customize a query for entities. The parameter, for example, can be used for sorting data.</param>
+ <param name="newEntityInitializer">An optional parameter that provides a function to initialize a new entity. This parameter is used in the detail collection view models when creating a single object view model for a new entity.</param>
+ <param name="canCreateNewEntity">A function that is called before an attempt to create a new entity is made. This parameter is used together with the newEntityInitializer parameter.</param>
+ <param name="ignoreSelectEntityMessage">An optional parameter that used to specify that the selected entity should not be managed by PeekCollectionViewModel.</param>
+</member>
+<member name="M:ProjetGestionDeStock.Common.CollectionViewModel`3.#ctor(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{`2},System.Func{`2,DevExpress.Mvvm.DataModel.IRepository{`0,`1}},System.Func{DevExpress.Mvvm.DataModel.IRepositoryQuery{`0},System.Linq.IQueryable{`0}},System.Action{`0},System.Func{System.Boolean},System.Boolean,DevExpress.Mvvm.ViewModel.UnitOfWorkPolicy)">
+ <summary>
+ Initializes a new instance of the CollectionViewModel class.
+ This constructor is declared protected to avoid an undesired instantiation of the CollectionViewModel type without the POCO proxy factory.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+ <param name="getRepositoryFunc">A function that returns a repository representing entities of the given type.</param>
+ <param name="projection">An optional parameter that provides a LINQ function used to customize a query for entities. The parameter, for example, can be used for sorting data.</param>
+ <param name="newEntityInitializer">An optional parameter that provides a function to initialize a new entity. This parameter is used in the detail collection view models when creating a single object view model for a new entity.</param>
+ <param name="canCreateNewEntity">A function that is called before an attempt to create a new entity is made. This parameter is used together with the newEntityInitializer parameter.</param>
+ <param name="ignoreSelectEntityMessage">An optional parameter that used to specify that the selected entity should not be managed by PeekCollectionViewModel.</param>
+</member>
+<member name="T:ProjetGestionDeStock.Common.CollectionViewModel`4">
+ <summary>
+ The base class for a POCO view models exposing a collection of entities of a given type and CRUD operations against these entities.
+ This is a partial class that provides extension point to add custom properties, commands and override methods without modifying the auto-generated code.
+ </summary>
+ <typeparam name="TEntity">A repository entity type.</typeparam>
+ <typeparam name="TProjection">A projection entity type.</typeparam>
+ <typeparam name="TPrimaryKey">A primary key value type.</typeparam>
+ <typeparam name="TUnitOfWork">A unit of work type.</typeparam>
+</member>
+<member name="M:ProjetGestionDeStock.Common.CollectionViewModel`4.CreateProjectionCollectionViewModel(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{`3},System.Func{`3,DevExpress.Mvvm.DataModel.IRepository{`0,`2}},System.Func{DevExpress.Mvvm.DataModel.IRepositoryQuery{`0},System.Linq.IQueryable{`1}},System.Action{`0},System.Func{System.Boolean},System.Boolean,DevExpress.Mvvm.ViewModel.UnitOfWorkPolicy)">
+ <summary>
+ Creates a new instance of CollectionViewModel as a POCO view model.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+ <param name="getRepositoryFunc">A function that returns a repository representing entities of the given type.</param>
+ <param name="projection">A LINQ function used to customize a query for entities. The parameter, for example, can be used for sorting data and/or for projecting data to a custom type that does not match the repository entity type.</param>
+ <param name="newEntityInitializer">An optional parameter that provides a function to initialize a new entity. This parameter is used in the detail collection view models when creating a single object view model for a new entity.</param>
+ <param name="canCreateNewEntity">A function that is called before an attempt to create a new entity is made. This parameter is used together with the newEntityInitializer parameter.</param>
+ <param name="ignoreSelectEntityMessage">An optional parameter that used to specify that the selected entity should not be managed by PeekCollectionViewModel.</param>
+</member>
+<member name="M:ProjetGestionDeStock.Common.CollectionViewModel`4.#ctor(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{`3},System.Func{`3,DevExpress.Mvvm.DataModel.IRepository{`0,`2}},System.Func{DevExpress.Mvvm.DataModel.IRepositoryQuery{`0},System.Linq.IQueryable{`1}},System.Action{`0},System.Func{System.Boolean},System.Boolean,DevExpress.Mvvm.ViewModel.UnitOfWorkPolicy)">
+ <summary>
+ Initializes a new instance of the CollectionViewModel class.
+ This constructor is declared protected to avoid an undesired instantiation of the CollectionViewModel type without the POCO proxy factory.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+ <param name="getRepositoryFunc">A function that returns a repository representing entities of the given type.</param>
+ <param name="projection">A LINQ function used to customize a query for entities. The parameter, for example, can be used for sorting data and/or for projecting data to a custom type that does not match the repository entity type.</param>
+ <param name="newEntityInitializer">An optional parameter that provides a function to initialize a new entity. This parameter is used in the detail collection view models when creating a single object view model for a new entity.</param>
+ <param name="canCreateNewEntity">A function that is called before an attempt to create a new entity is made. This parameter is used together with the newEntityInitializer parameter.</param>
+ <param name="ignoreSelectEntityMessage">An optional parameter that used to specify that the selected entity should not be managed by PeekCollectionViewModel.</param>
+</member>
+<member name="T:ProjetGestionDeStock.Common.EntitiesViewModel`3">
+ <summary>
+ The base class for POCO view models exposing a collection of entities of the given type.
+ This is a partial class that provides an extension point to add custom properties, commands and override methods without modifying the auto-generated code.
+ </summary>
+ <typeparam name="TEntity">A repository entity type.</typeparam>
+ <typeparam name="TProjection">A projection entity type.</typeparam>
+ <typeparam name="TUnitOfWork">A unit of work type.</typeparam>
+</member>
+<member name="M:ProjetGestionDeStock.Common.EntitiesViewModel`3.#ctor(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{`2},System.Func{`2,DevExpress.Mvvm.DataModel.IReadOnlyRepository{`0}},System.Func{DevExpress.Mvvm.DataModel.IRepositoryQuery{`0},System.Linq.IQueryable{`1}},DevExpress.Mvvm.ViewModel.UnitOfWorkPolicy)">
+ <summary>
+ Initializes a new instance of the EntitiesViewModel class.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+ <param name="getRepositoryFunc">A function that returns a repository representing entities of the given type.</param>
+ <param name="projection">A LINQ function used to customize a query for entities. The parameter, for example, can be used for sorting data and/or for projecting data to a custom type that does not match the repository entity type.</param>
+</member>
+<member name="T:ProjetGestionDeStock.Common.ReadOnlyCollectionViewModel`2">
+ <summary>
+ The base class for POCO view models exposing a read-only collection of entities of a given type.
+ This is a partial class that provides the extension point to add custom properties, commands and override methods without modifying the auto-generated code.
+ </summary>
+ <typeparam name="TEntity">An entity type.</typeparam>
+ <typeparam name="TUnitOfWork">A unit of work type.</typeparam>
+</member>
+<member name="M:ProjetGestionDeStock.Common.ReadOnlyCollectionViewModel`2.CreateReadOnlyCollectionViewModel(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{`1},System.Func{`1,DevExpress.Mvvm.DataModel.IReadOnlyRepository{`0}},System.Func{DevExpress.Mvvm.DataModel.IRepositoryQuery{`0},System.Linq.IQueryable{`0}},DevExpress.Mvvm.ViewModel.UnitOfWorkPolicy)">
+ <summary>
+ Creates a new instance of ReadOnlyCollectionViewModel as a POCO view model.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+ <param name="getRepositoryFunc">A function that returns a repository representing entities of the given type.</param>
+ <param name="projection">An optional parameter that provides a LINQ function used to customize a query for entities. The parameter, for example, can be used for sorting data.</param>
+</member>
+<member name="M:ProjetGestionDeStock.Common.ReadOnlyCollectionViewModel`2.#ctor(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{`1},System.Func{`1,DevExpress.Mvvm.DataModel.IReadOnlyRepository{`0}},System.Func{DevExpress.Mvvm.DataModel.IRepositoryQuery{`0},System.Linq.IQueryable{`0}},DevExpress.Mvvm.ViewModel.UnitOfWorkPolicy)">
+ <summary>
+ Initializes a new instance of the ReadOnlyCollectionViewModel class.
+ This constructor is declared protected to avoid an undesired instantiation of the PeekCollectionViewModel type without the POCO proxy factory.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+ <param name="getRepositoryFunc">A function that returns a repository representing entities of the given type.</param>
+ <param name="projection">An optional parameter that provides a LINQ function used to customize a query for entities. The parameter, for example, can be used for sorting data.</param>
+</member>
+<member name="T:ProjetGestionDeStock.Common.ReadOnlyCollectionViewModel`3">
+ <summary>
+ The base class for POCO view models exposing a read-only collection of entities of a given type.
+ This is a partial class that provides the extension point to add custom properties, commands and override methods without modifying the auto-generated code.
+ </summary>
+ <typeparam name="TEntity">A repository entity type.</typeparam>
+ <typeparam name="TProjection">A projection entity type.</typeparam>
+ <typeparam name="TUnitOfWork">A unit of work type.</typeparam>
+</member>
+<member name="M:ProjetGestionDeStock.Common.ReadOnlyCollectionViewModel`3.CreateReadOnlyProjectionCollectionViewModel(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{`2},System.Func{`2,DevExpress.Mvvm.DataModel.IReadOnlyRepository{`0}},System.Func{DevExpress.Mvvm.DataModel.IRepositoryQuery{`0},System.Linq.IQueryable{`1}},DevExpress.Mvvm.ViewModel.UnitOfWorkPolicy)">
+ <summary>
+ Creates a new instance of ReadOnlyCollectionViewModel as a POCO view model.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+ <param name="getRepositoryFunc">A function that returns the repository representing entities of a given type.</param>
+ <param name="projection">A LINQ function used to customize a query for entities. The parameter, for example, can be used for sorting data and/or for projecting data to a custom type that does not match the repository entity type.</param>
+</member>
+<member name="M:ProjetGestionDeStock.Common.ReadOnlyCollectionViewModel`3.#ctor(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{`2},System.Func{`2,DevExpress.Mvvm.DataModel.IReadOnlyRepository{`0}},System.Func{DevExpress.Mvvm.DataModel.IRepositoryQuery{`0},System.Linq.IQueryable{`1}},DevExpress.Mvvm.ViewModel.UnitOfWorkPolicy)">
+ <summary>
+ Initializes a new instance of the ReadOnlyCollectionViewModel class.
+ This constructor is declared protected to avoid an undesired instantiation of the PeekCollectionViewModel type without the POCO proxy factory.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+ <param name="getRepositoryFunc">A function that returns the repository representing entities of a given type.</param>
+ <param name="projection">A LINQ function used to customize a query for entities. The parameter, for example, can be used for sorting data and/or for projecting data to a custom type that does not match the repository entity type.</param>
+</member>
+<member name="T:ProjetGestionDeStock.Common.SingleObjectViewModel`3">
+ <summary>
+ The base class for POCO view models exposing a single entity of a given type and CRUD operations against this entity.
+ This is a partial class that provides the extension point to add custom properties, commands and override methods without modifying the auto-generated code.
+ </summary>
+ <typeparam name="TEntity">An entity type.</typeparam>
+ <typeparam name="TPrimaryKey">A primary key value type.</typeparam>
+ <typeparam name="TUnitOfWork">A unit of work type.</typeparam>
+</member>
+<member name="M:ProjetGestionDeStock.Common.SingleObjectViewModel`3.#ctor(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{`2},System.Func{`2,DevExpress.Mvvm.DataModel.IRepository{`0,`1}},System.Func{`0,System.Object})">
+ <summary>
+ Initializes a new instance of the SingleObjectViewModel class.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create the unit of work instance.</param>
+ <param name="getRepositoryFunc">A function that returns the repository representing entities of a given type.</param>
+ <param name="getEntityDisplayNameFunc">An optional parameter that provides a function to obtain the display text for a given entity. If ommited, the primary key value is used as a display text.</param>
+</member>
+<member name="T:ProjetGestionDeStock.ViewModels.BD_STOCKEntities1ViewModel">
+ <summary>
+ Represents the root POCO view model for the BD_STOCKEntities1 data model.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.ViewModels.BD_STOCKEntities1ViewModel.Create">
+ <summary>
+ Creates a new instance of BD_STOCKEntities1ViewModel as a POCO view model.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.ViewModels.BD_STOCKEntities1ViewModel.#ctor">
+ <summary>
+ Initializes a new instance of the BD_STOCKEntities1ViewModel class.
+ This constructor is declared protected to avoid undesired instantiation of the BD_STOCKEntities1ViewModel type without the POCO proxy factory.
+ </summary>
+</member>
+<member name="T:ProjetGestionDeStock.ViewModels.CategoireCollectionViewModel">
+ <summary>
+ Represents the Categoire collection view model.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.ViewModels.CategoireCollectionViewModel.Create(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{ProjetGestionDeStock.BD_STOCKEntities1DataModel.IBD_STOCKEntities1UnitOfWork})">
+ <summary>
+ Creates a new instance of CategoireCollectionViewModel as a POCO view model.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+</member>
+<member name="M:ProjetGestionDeStock.ViewModels.CategoireCollectionViewModel.#ctor(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{ProjetGestionDeStock.BD_STOCKEntities1DataModel.IBD_STOCKEntities1UnitOfWork})">
+ <summary>
+ Initializes a new instance of the CategoireCollectionViewModel class.
+ This constructor is declared protected to avoid undesired instantiation of the CategoireCollectionViewModel type without the POCO proxy factory.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+</member>
+<member name="T:ProjetGestionDeStock.ViewModels.CategoireViewModel">
+ <summary>
+ Represents the single Categoire object view model.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.ViewModels.CategoireViewModel.Create(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{ProjetGestionDeStock.BD_STOCKEntities1DataModel.IBD_STOCKEntities1UnitOfWork})">
+ <summary>
+ Creates a new instance of CategoireViewModel as a POCO view model.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+</member>
+<member name="M:ProjetGestionDeStock.ViewModels.CategoireViewModel.#ctor(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{ProjetGestionDeStock.BD_STOCKEntities1DataModel.IBD_STOCKEntities1UnitOfWork})">
+ <summary>
+ Initializes a new instance of the CategoireViewModel class.
+ This constructor is declared protected to avoid undesired instantiation of the CategoireViewModel type without the POCO proxy factory.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+</member>
+<member name="P:ProjetGestionDeStock.ViewModels.CategoireViewModel.LookUpProduct">
+ <summary>
+ The view model that contains a look-up collection of Product for the corresponding navigation property in the view.
+ </summary>
+</member>
+<member name="P:ProjetGestionDeStock.ViewModels.CategoireViewModel.CategoireProductDetails">
+ <summary>
+ The view model for the CategoireProduct detail collection.
+ </summary>
+</member>
+<member name="T:ProjetGestionDeStock.ViewModels.ProductCollectionViewModel">
+ <summary>
+ Represents the Product collection view model.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.ViewModels.ProductCollectionViewModel.Create(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{ProjetGestionDeStock.BD_STOCKEntities1DataModel.IBD_STOCKEntities1UnitOfWork})">
+ <summary>
+ Creates a new instance of ProductCollectionViewModel as a POCO view model.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+</member>
+<member name="M:ProjetGestionDeStock.ViewModels.ProductCollectionViewModel.#ctor(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{ProjetGestionDeStock.BD_STOCKEntities1DataModel.IBD_STOCKEntities1UnitOfWork})">
+ <summary>
+ Initializes a new instance of the ProductCollectionViewModel class.
+ This constructor is declared protected to avoid undesired instantiation of the ProductCollectionViewModel type without the POCO proxy factory.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+</member>
+<member name="T:ProjetGestionDeStock.ViewModels.ProductViewModel">
+ <summary>
+ Represents the single Product object view model.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.ViewModels.ProductViewModel.Create(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{ProjetGestionDeStock.BD_STOCKEntities1DataModel.IBD_STOCKEntities1UnitOfWork})">
+ <summary>
+ Creates a new instance of ProductViewModel as a POCO view model.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+</member>
+<member name="M:ProjetGestionDeStock.ViewModels.ProductViewModel.#ctor(DevExpress.Mvvm.DataModel.IUnitOfWorkFactory{ProjetGestionDeStock.BD_STOCKEntities1DataModel.IBD_STOCKEntities1UnitOfWork})">
+ <summary>
+ Initializes a new instance of the ProductViewModel class.
+ This constructor is declared protected to avoid undesired instantiation of the ProductViewModel type without the POCO proxy factory.
+ </summary>
+ <param name="unitOfWorkFactory">A factory used to create a unit of work instance.</param>
+</member>
+<member name="P:ProjetGestionDeStock.ViewModels.ProductViewModel.LookUpCategoire">
+ <summary>
+ The view model that contains a look-up collection of Categoire for the corresponding navigation property in the view.
+ </summary>
+</member>
+<member name="F:ProjetGestionDeStock.Views.BD_STOCKEntities1View.BD_STOCKEntities1View.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.Views.BD_STOCKEntities1View.BD_STOCKEntities1View.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:ProjetGestionDeStock.Views.BD_STOCKEntities1View.BD_STOCKEntities1View.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:ProjetGestionDeStock.Views.CategoireCollectionView.CategoireCollectionView.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.Views.CategoireCollectionView.CategoireCollectionView.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:ProjetGestionDeStock.Views.CategoireCollectionView.CategoireCollectionView.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:ProjetGestionDeStock.Views.CategoireView.CategoireView.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.Views.CategoireView.CategoireView.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:ProjetGestionDeStock.Views.CategoireView.CategoireView.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:ProjetGestionDeStock.Views.ProductCollectionView.ProductCollectionView.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.Views.ProductCollectionView.ProductCollectionView.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:ProjetGestionDeStock.Views.ProductCollectionView.ProductCollectionView.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+<member name="F:ProjetGestionDeStock.Views.ProductView.ProductView.components">
+ <summary> 
+ Required designer variable.
+ </summary>
+</member>
+<member name="M:ProjetGestionDeStock.Views.ProductView.ProductView.Dispose(System.Boolean)">
+ <summary> 
+ Clean up any resources being used.
+ </summary>
+ <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+</member>
+<member name="M:ProjetGestionDeStock.Views.ProductView.ProductView.InitializeComponent">
+ <summary> 
+ Required method for Designer support - do not modify 
+ the contents of this method with the code editor.
+ </summary>
+</member>
+</members>
+</doc>

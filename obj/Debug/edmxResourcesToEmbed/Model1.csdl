@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BD_STOCKModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Categoire">
+    <Key>
+      <PropertyRef Name="CategorieId" />
+    </Key>
+    <Property Name="CategorieId" Type="Int32" Nullable="false" />
+    <Property Name="CategorieName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Designation" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Product" Relationship="Self.FK_Product_Categoire" FromRole="Categoire" ToRole="Product" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ProductId" />
+    </Key>
+    <Property Name="ProductId" Type="Int32" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Int32" />
+    <Property Name="CreationDate" Type="DateTime" Precision="3" />
+    <Property Name="ModificationDate" Type="DateTime" Precision="3" />
+    <Property Name="Price" Type="Double" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProviderId" Type="Int32" />
+    <Property Name="ProviderName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="CategorieId" Type="Int32" />
+    <NavigationProperty Name="Categoire" Relationship="Self.FK_Product_Categoire" FromRole="Product" ToRole="Categoire" />
+  </EntityType>
+  <Association Name="FK_Product_Categoire">
+    <End Role="Categoire" Type="Self.Categoire" Multiplicity="0..1" />
+    <End Role="Product" Type="Self.Product" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categoire">
+        <PropertyRef Name="CategorieId" />
+      </Principal>
+      <Dependent Role="Product">
+        <PropertyRef Name="CategorieId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BD_STOCKEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Categoire" EntityType="Self.Categoire" />
+    <EntitySet Name="Product" EntityType="Self.Product" />
+    <AssociationSet Name="FK_Product_Categoire" Association="Self.FK_Product_Categoire">
+      <End Role="Categoire" EntitySet="Categoire" />
+      <End Role="Product" EntitySet="Product" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
